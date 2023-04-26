@@ -1,0 +1,30 @@
+<h1>
+  Device Details:
+</h1>
+<div>
+  <p>
+    <strong>Name</strong>: {{terminal.name}}
+  </p>
+  <p>
+    <strong>Device Code</strong>: {{terminal.code}}
+  </p>
+  <p>
+    <!-- Use this Device Code ID to get the current status of the Device Code  -->
+    <!-- as well as the Terminal Serial Number when successfully paired -->
+    <strong>Device Code ID</strong>: {{terminal.id}}
+  </p>
+  <p>
+    Sign in to your Terminal using this Device Code.
+  </p>
+  <p>
+    If you subscribe to the device.code.paired webhook, <br/>
+    the logs will update when the Square Terminal is successfully paired.
+  </p>
+  
+</div>
+<a href="/checkouts/charge">
+  <button>
+    Charge for $1.00
+  </button>
+</a>
+
