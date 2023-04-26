@@ -1,0 +1,17 @@
+<!--Location Picker for Terminal API-->
+<!--Terminal API requires the Terminal be associated with a Square Location that is actively processing Credit Cards-->
+<h1>
+  Locations
+</h1>
+<div>
+{{#each locations}}
+  <p>
+    <strong>Location</strong>: {{this.name}}
+  </p>
+	<a href="/terminal/device/{{this.id}}">
+	  <button>
+		Register {{this.name}}
+	  </button>
+	</a>
+{{/each}}
+</div>

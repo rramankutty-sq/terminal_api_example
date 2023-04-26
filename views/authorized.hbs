@@ -1,0 +1,42 @@
+<h1>
+User Information
+</h1>
+<div>
+  <p>
+    <strong>Name</strong>: {{user.name}}
+  </p>
+  <p>
+    <strong>Email</strong>: {{user.email}}
+  </p>
+  <p>
+    <strong>Token Expires:</strong> {{user.tokenExp}}
+  </p>
+</div>
+
+<a href="/auth/revoke">
+  <button>
+    Revoke
+  </button>
+</a>
+
+<a href="/auth/refresh">
+  <button>
+    Refresh
+  </button>
+</a>
+
+<a href="/terminal/register_device">
+  <button>
+    Register A Terminal
+  </button>
+</a>
+<a href="/checkouts/charge">
+  <button>
+  Charge existing Terminal $1.00
+  </button>
+</a>
+<a href="/checkouts/list">
+  <button>
+  View Latest Checkout sent to Terminal
+  </button>
+</a>
